@@ -1,42 +1,35 @@
-# Miarahaba ôo / Hello ,
-`MG : ` Ity repositories ity dia natao ho ampiasain'ny olona rehetra izay mila azy . Raisina an-tanan-droa avokoa ireo **fanamarihana** sy **fanatsarana** rehetra. 
+# Fihirana-FFPM
 
-`EN : `This repositories can be used by those who need it. All **comments** and **improvements** are welcome.
+Données JSON de chants issus notamment de Fihirana FFPM, Fihirana Fanampiny, Antema et TSANTA.
 
-Ity **repositories** ity dia misy ny version JSON an'ireo hira hita ao anatin'ny fihirana toy ny : 
+## MiReDo
 
-	1.  Fihirana FFPM
-	2.  Antema
-	3.  Fihirana Fanampiny
+Ce dépôt sert également de base documentaire et de données pour **MiReDo**, une application desktop Rust de bibliothèque et de lecture de chants.
 
-### Fanatsarana tokony/azo atao
+La conception complète est dans [docs/miredo/](./docs/miredo/).
 
-1. Fampidirana ny lohateny sy ny mpanoratra ho an'ny hira rehetra.
-2. Famoronana ny **SQL** (mendrika261 Mendrika Ramialison)
-3. ....Tsy mbola haiko fa apetrako eto ihany rehefa mahita izaho 😁😁.
+### Documentation MiReDo
 
-###   Handray anjara ?
+- [Vue d'ensemble](./docs/miredo/00-vue-ensemble.md)
+- [Architecture](./docs/miredo/01-architecture.md)
+- [Modèle de données](./docs/miredo/02-modele-donnees.md)
+- [Design system](./docs/miredo/03-design-system.md)
+- [UX/UI](./docs/miredo/04-ux-ui.md)
+- [Pages et navigation](./docs/miredo/05-pages-navigation.md)
+- [Lecteurs PDF et texte](./docs/miredo/06-lecteurs.md)
+- [I18n et thèmes](./docs/miredo/07-i18n-themes.md)
+- [Persistance et recherche](./docs/miredo/08-persistance-recherche.md)
+- [Roadmap et qualité](./docs/miredo/09-roadmap-qualite.md)
+- [Choix technologiques](./docs/miredo/10-choix-technologiques.md)
 
-- Fork-eo
-- Mamorona branch ho anao *(git checkout -b branch_ko)*
-- Commit-eo ireo fanovana nataonao *(git commit -m "Nanova zavatra milay be")*
-- Push-eo @ izay *(git push origin branch_ko)*
-- Mamoronà **Pull request**
+### Principes MiReDo
 
-`MG : `Isaorana avokoa ireo nanampy (@hearoy && mendrika261) nahafahana nananganana ity projet kely ity.
-
-`EN : ` Thank you to everyone (@hearoy && mendrika261) who contributed  to the creation of this project.
-
-Mankasitraka / Thank you
-
-
-
-
-
-
-
-
-
-
-
-
+- Rust desktop multiplateforme.
+- Un **Song** central avec vue partition et vue texte.
+- Bascule PDF ↔ Texte sans perdre le contexte.
+- Interface moderne de productivité desktop, sobre et orientée contenu.
+- **FR / MG / EN dans un seul fichier** resources/i18n.json.
+- **Toutes les couleurs dans un seul fichier** resources/palette.json.
+- Pages dédiées **Accueil, Bibliothèque, Favoris, Mes listes, Paramètres, Aide et À propos**.
+- Recherche par numéro, titre, auteur et paroles.
+- Fonctionnement hors ligne pour les fonctions principales.
